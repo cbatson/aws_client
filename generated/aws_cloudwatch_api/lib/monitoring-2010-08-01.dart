@@ -4678,8 +4678,8 @@ class Range {
     final endTime = this.endTime;
     final startTime = this.startTime;
     return {
-      'EndTime': unixTimestampToJson(endTime),
-      'StartTime': unixTimestampToJson(startTime),
+      'EndTime': iso8601ToJson(endTime),
+      'StartTime': iso8601ToJson(startTime),
     };
   }
 }
